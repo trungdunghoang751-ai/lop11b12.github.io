@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Của Tôi</title>
+    <style>
+        /* Sử dụng Font chữ hiện đại hơn */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            padding: 60px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        button {
+            padding: 12px 25px;
+            background: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 25px; /* Bo tròn nút cho hiện đại */
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease; /* Hiệu ứng mượt mà */
+        }
+        /* Hiệu ứng khi di chuột vào nút */
+        button:hover {
+            background: #1976D2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chào mừng đến với không gian của tôi</h1>
+</header>
+
+<section>
+    <p>Đây là trang web đầu tiên tôi xây dựng. Tôi đang học cách làm chủ thế giới web!</p>
+    <button id="btnWelcome">
+        Khám phá ngay
+    </button>
+</section>
+
+<script>
+    // Tách JavaScript ra khỏi HTML để mã sạch hơn
+    document.getElementById('btnWelcome').onclick = function() {
+        alert('Cảm ơn bạn đã ghé thăm trang web của tôi!');
+    };
+</script>
+
+</body>
+</html>
